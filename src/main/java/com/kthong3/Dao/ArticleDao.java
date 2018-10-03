@@ -39,4 +39,8 @@ public class ArticleDao {
         articleToUpdate.setTitle(article.getTitle());
         articles.put(article.getId(), article);
     }
+
+    public void addNewArticleToDb(Article article) {
+        this.articles.put(article.getId(), article);
+    }
 }

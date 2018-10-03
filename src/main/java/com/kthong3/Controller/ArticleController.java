@@ -40,4 +40,9 @@ public class ArticleController {
         articleService.updateArticle(article);
     }
 
+    @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void addNewArticle(@RequestBody Article article){
+        articleService.addNewArticle(article);
+    }
+
 }
