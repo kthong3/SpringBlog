@@ -1,6 +1,7 @@
 package com.kthong3.Dao;
 
 import com.kthong3.Entity.Article;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
@@ -8,6 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Repository
+@Qualifier("fakeData")
 public class ArticleDaoImpl implements ArticleDao {
 
     private static Map<Integer, Article> articles;
