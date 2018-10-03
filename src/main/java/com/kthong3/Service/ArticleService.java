@@ -24,4 +24,8 @@ public class ArticleService {
     public void removeArticleById(int id) {
         this.articleDao.removeArticleById(id);
     }
+
+    public void updateArticle(Article article){
+        this.articleDao.updateArticle(article);
+    }
 }

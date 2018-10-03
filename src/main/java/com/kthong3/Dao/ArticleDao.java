@@ -32,4 +32,11 @@ public class ArticleDao {
     public void removeArticleById(int id) {
         this.articles.remove(id);
     }
+
+    public void updateArticle(Article article){
+        Article articleToUpdate = articles.get(article.getId());
+        articleToUpdate.setAuthor(article.getAuthor());
+        articleToUpdate.setTitle(article.getTitle());
+        articles.put(article.getId(), article);
+    }
 }
