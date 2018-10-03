@@ -28,4 +28,8 @@ public class ArticleService {
     public void updateArticle(Article article){
         this.articleDao.updateArticle(article);
     }
+
+    public void addNewArticle(Article article) {
+        this.articleDao.addNewArticleToDb(article);
+    }
 }
