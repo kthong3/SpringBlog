@@ -13,7 +13,11 @@ public class ArticleService {
     @Autowired
     private ArticleDao articleDao;
 
-    public Collection<Article> getAllArticles(){
-        return articleDao.getAllArticles();
+    public Collection<Article> getAllArticles() {
+        return this.articleDao.getAllArticles();
+    }
+
+    public Article getArticleById(int id) {
+        return this.articleDao.getArticleById(id);
     }
 }

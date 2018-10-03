@@ -24,4 +24,8 @@ public class ArticleDao {
     public Collection<Article> getAllArticles(){
         return this.articles.values();
     }
+
+    public Article getArticleById(int id){
+        return this.articles.get(id);
+    }
 }
