@@ -27,4 +27,10 @@ public class ArticleController {
     public Article getArticleById(@PathVariable("id") int id){
         return articleService.getArticleById(id);
     }
+
+    @RequestMapping(value="/{id}", method = RequestMethod.DELETE)
+    public void deleteArticleById(@PathVariable("id") int id){
+        articleService.removeArticleById(id);
+    }
+
 }

@@ -28,4 +28,8 @@ public class ArticleDao {
     public Article getArticleById(int id){
         return this.articles.get(id);
     }
+
+    public void removeArticleById(int id) {
+        this.articles.remove(id);
+    }
 }

@@ -20,4 +20,8 @@ public class ArticleService {
     public Article getArticleById(int id) {
         return this.articleDao.getArticleById(id);
     }
+
+    public void removeArticleById(int id) {
+        this.articleDao.removeArticleById(id);
+    }
 }
